@@ -1,0 +1,9 @@
+name: Atalk
+main: com.github.triarry.Atalk.Atalk
+version: 1.0
+author: triarry
+commands:
+    atalk:
+        aliases: [at, a]
+        description: Tells the player information about this plugin when no arguments are given.
+        usage: /<command>
