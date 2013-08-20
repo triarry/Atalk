@@ -10,5 +10,8 @@ version: 1.0
 check-for-updates: true
 staff:
     members:
-    - triarry
-    - yourstaffhereandbelow
+      - triarry
+      - yourstaffhereandbelow
+players:
+    mute:
+      []
