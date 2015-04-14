@@ -2,7 +2,7 @@
 #A Minecraft/Bukkit plugin made by triarry
 #
 #DO NOT CHANGE THIS LINE
-version: 1.0
+version: 1.2
 #
 #triarry's github: https://github.com/triarry/Atalk
 #
@@ -12,3 +12,6 @@ staff:
     members:
     - triarry
     - yourstaffhereandbelow
+players:
+    mute:
+      []

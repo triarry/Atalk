@@ -42,7 +42,7 @@ public class Atalk extends JavaPlugin {
 	    }
 	    config = new YamlConfiguration();
 	    loadYamls();
-	    if (getConfig().getDouble("version") != 1.0) {
+	    if (getConfig().getDouble("version") != 1.2) {
 	    	this.getLogger().info("Your config is out of date. Regenerating...");
             configFile.setWritable(true);
             configFile.renameTo(new File(getDataFolder() + "/old-config.yml"));
