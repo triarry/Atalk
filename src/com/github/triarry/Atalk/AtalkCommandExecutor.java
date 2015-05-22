@@ -23,7 +23,7 @@ public class AtalkCommandExecutor implements CommandExecutor {
 		if (label.equalsIgnoreCase("Atalk") || label.equalsIgnoreCase("At") || label.equalsIgnoreCase("A")) {
 			if (args.length < 1) {
 				sender.sendMessage(ChatColor.LIGHT_PURPLE + "#####");
-				sender.sendMessage(ChatColor.GREEN + "Currently running Atalk version 1.2");
+				sender.sendMessage(ChatColor.GREEN + "Currently running Atalk version 1.3	");
 				sender.sendMessage(ChatColor.GREEN + "Plugin made by triarry");
 				sender.sendMessage(ChatColor.GREEN + "To send a message to all online staff, type /atalk <question>");
 				sender.sendMessage(ChatColor.LIGHT_PURPLE + "#####");

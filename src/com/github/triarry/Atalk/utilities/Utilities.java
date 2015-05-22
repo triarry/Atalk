@@ -1,6 +1,8 @@
 package com.github.triarry.Atalk.utilities;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -31,10 +33,17 @@ public class Utilities {
     
     public void sendMsgStaff(CommandSender sender, Player p, String msg, String receiver)  {
     	p.sendMessage(ChatColor.YELLOW + "[Atalk] " + ChatColor.GREEN + "(@" + receiver + ") " + ChatColor.RED + "Staff " + sender.getName() + ": " + ChatColor.GREEN + msg);
+    	sendSound(p);
     }
     
     public void sendMsgPlayer(CommandSender sender, Player p, String msg)  {
     	p.sendMessage(ChatColor.YELLOW + "[Atalk] " + ChatColor.AQUA + "Player " + sender.getName() + ": " + ChatColor.GREEN + msg);
+    	sendSound(p);
+    }
+    
+    public void sendSound(Player p) {
+    	p.getLocation();
+    	p.getWorld().playSound(p.getLocation(),Sound.NOTE_PIANO,1, 0);
     }
     
     public boolean isMuted(CommandSender sender) {
